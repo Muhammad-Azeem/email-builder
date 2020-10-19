@@ -1,0 +1,29 @@
+.avatar-uploader > .ant-upload {
+    width: 100%;
+    height: 100%;
+}
+.avatar-uploader {
+    width: 100%;
+    height: 100%;
+}
+.block-container {
+    width: 100%;
+    height: 100%;
+}
+.ant-upload-select-picture-card > span > img
+{
+    width: 100%;
+    height: auto !important;
+    box-sizing: border-box;
+}
+.ant-upload-picture-card-wrapper > .ant-upload-select-picture-card
+{
+    width: 100%;
+}
+.ant-upload-select
+{
+    width: 100% !important;
+}
+.white-space-pre {
+    white-space: pre-wrap;
+}

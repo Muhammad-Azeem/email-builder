@@ -1,0 +1,121 @@
+/** Actions */
+.float-btn{
+    position:fixed;
+    width:50px;
+    height:50px;
+    line-height: 42px;
+    font-size: 18px;
+    bottom:40px;
+    right:40px;
+    background-color:#1f1f1f;
+    color:#FFF !important;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 0 0 5px #adb5bd;
+    z-index:1000;
+    animation: bot-to-top 2s ease-out;
+}
+
+#menu-float{
+    position:fixed;
+    right:40px;
+    padding-bottom:5px;
+    bottom:70px;
+    z-index:100;
+}
+
+#menu-float li{
+    list-style:none;
+    margin-bottom:10px;
+    line-height: 42px;
+    font-size: 18px;
+}
+
+#menu-float li a{
+    background-color:#1f1f1f;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 0 0 5px #adb5bd;
+    width:50px;
+    height:50px;
+    display:block;
+}
+
+#menu-float:hover{
+    visibility:visible!important;
+    opacity:1!important;
+}
+
+a.float-btn + #menu-float{
+    visibility: hidden;
+}
+
+a.float-btn:hover + #menu-float{
+    visibility: visible;
+    animation: scale-in 0.5s;
+}
+
+a.float-btn i{
+    animation: rotate-in 0.5s;
+}
+
+a.float-btn:hover > i{
+    animation: rotate-out 0.5s;
+}
+
+@keyframes bot-to-top {
+    0%   {bottom:-40px}
+    50%  {bottom:40px}
+}
+
+@keyframes scale-in {
+    from {transform: scale(0);opacity: 0;}
+    to {transform: scale(1);opacity: 1;}
+}
+
+@keyframes rotate-in {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes rotate-out {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
+}
+
+/** Preview */
+.float-preview-btn{
+    position:fixed;
+    line-height: 50px;
+    font-size: 18px;
+    bottom:40px;
+    left:40px;
+    overflow: hidden;
+    background-color:#1f1f1f;
+    color:#FFF !important;
+    border-radius:5px;
+    text-align:center;
+    box-shadow: 0 0 5px #adb5bd;
+    z-index:1000;
+    animation: bot-to-top 2s ease-out;
+}
+
+.float-preview-btn a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.float-preview-btn a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.float-preview-btn a.active {
+    background-color: #4CAF50;
+    color: white;
+}

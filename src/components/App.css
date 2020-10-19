@@ -1,0 +1,34 @@
+#components-layout-logo {
+    margin: 16px;
+}
+.ant-card-body {
+    padding: 5px !important;
+    padding-top: 10px !important;
+}
+.menu-panel {
+    background-color: #f0f2f5 !important;
+}
+.ant-tabs-bar {
+    border-bottom: 1px solid #1f1f1f !important;
+}
+.ant-card-head {
+    border-bottom: 1px solid #1f1f1f !important;
+}
+
+.rc-color-picker-trigger {
+    width: 98% !important;
+}
+
+.quill {
+    background: #fff !important;
+    margin-bottom: 10px !important;
+}
+.ql-container {
+    height: 150px !important;
+    /*overflow: auto !important;*/
+}
+
+.hasLink {
+    pointer-events: none;
+    cursor: default;
+}
